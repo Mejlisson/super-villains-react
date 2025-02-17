@@ -7,7 +7,7 @@ type Person = {
 };
 
 export default function PersonCard(){
-    const[person, setPerson] = useState<Person>({name: "", age: 0});
+    const[person, setPerson] = useState<Person>({name: "", age: ""});
 
     const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         //Vin får inte göra: person.name = e.target.value
@@ -28,12 +28,14 @@ export default function PersonCard(){
             <label htmlFor="personName">Name 
             <input  type="text" 
                     id="personName" 
+                    placeholder="Type in a Name..."
                     value={person.name} 
                     onChange={handleNameChange} /> 
             </label>
             <label htmlFor="personAge">Age 
             <input  type="text" 
                     id="personAge" 
+                    placeholder="Type in age..."
                     value={person.age} 
                     onChange={handleAgeChange} /> 
             </label>
