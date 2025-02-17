@@ -1,14 +1,14 @@
-import './App.scss'
+import InputDemo from "./components/imputDemo";
+import "./App.scss";
 
 function App() {
-  return (
-    <>
-      <div>
-       
-      </div>
-      
-    </>
-  )
+	return (
+		<>
+			<h1>🦹 super-villains-react 🦹</h1>
+			<p>a demo for students of React</p>
+			<InputDemo />
+		</>
+	);
 }
 
-export default App
+export default App;
