@@ -2,6 +2,7 @@ import InputDemo from "./components/InputDemo/imputDemo";
 import InputField from "./components/InputField/InputField";
 import CheckBox from "./components/CheckBox/CheckBox";
 import PersonCard from "./components/PersonCart/PersonCard";
+import AnimalList from "./components/AnimalList/AnimalList";
 import "./App.scss";
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <CheckBox />
       <hr/>
       <PersonCard />
+      <hr/>
+      <AnimalList />
 		</>
 	);
 }

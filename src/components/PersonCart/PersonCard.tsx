@@ -13,6 +13,10 @@ export default function PersonCard(){
         //Vin får inte göra: person.name = e.target.value
         setPerson({...person, name: e.target.value});
     };
+    const handleAgeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        //Vin får inte göra: person.name = e.target.value
+        setPerson({...person, age: e.target.value});
+    };
 
     return (
         <>
@@ -27,6 +31,13 @@ export default function PersonCard(){
                     value={person.name} 
                     onChange={handleNameChange} /> 
             </label>
+            <label htmlFor="personAge">Age 
+            <input  type="text" 
+                    id="personAge" 
+                    value={person.age} 
+                    onChange={handleAgeChange} /> 
+            </label>
+
         </>
     );
 }
