@@ -1,6 +1,7 @@
 import InputDemo from "./components/InputDemo/imputDemo";
 import InputField from "./components/InputField/InputField";
 import CheckBox from "./components/CheckBox/CheckBox";
+import PersonCard from "./components/PersonCart/PersonCard";
 import "./App.scss";
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
 			
       <InputField />
       <CheckBox />
+      <hr/>
+      <PersonCard />
 		</>
 	);
 }
