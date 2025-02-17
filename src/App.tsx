@@ -1,4 +1,6 @@
-import InputDemo from "./components/imputDemo";
+import InputDemo from "./components/InputDemo/imputDemo";
+import InputField from "./components/InputField/InputField";
+import CheckBox from "./components/CheckBox/CheckBox";
 import "./App.scss";
 
 function App() {
@@ -6,9 +8,16 @@ function App() {
 		<>
   		<h1>🦹 super-villains-react 🦹</h1>
       <hr/>
-			<InputDemo />
+			
+      <InputField />
+      <CheckBox />
 		</>
 	);
 }
 
 export default App;
+
+
+/*
+<InputDemo />
+*/
